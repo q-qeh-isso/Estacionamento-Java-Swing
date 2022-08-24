@@ -1,0 +1,10 @@
+#Banco de dados: DATABASE  |  Array na Mem�ria: ARRAY
+persistencia=ARRAY
+insertMovimentacao=insert into tb_movimentacoes (placa,marca,modelo,cor,dataEntrada) values (?,?,?,?,?)
+selectMovAberta=select placa,marca,modelo,cor,dataEntrada,dataSaida,valor from tb_movimentacoes where dataSaida is null and placa = ?
+updateMovimentacao=update tb_movimentacoes set dataSaida = ?, valor = ? where placa = ? and dataSaida is null
+selectOcupadas=select count(*) from tb_movimentacoes where dataSaida is null
+#URL: "jdbc:mysql://url/nome_do_banco?useTimezone=true&serverTimezone=UTC"
+urlConexao=jdbc:mysql://localhost:3306/estacionamento?useTimezone=true&serverTimezone=UTC
+usuarioBanco=USUARIO
+senhaBanco=SENHA
