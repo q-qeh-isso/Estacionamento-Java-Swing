@@ -1,0 +1,7 @@
+br.com.impacta.estacionamento.controle
+br.com.impacta.estacionamento.entidades
+br.com.impacta.estacionamento.gui.console
+br.com.impacta.estacionamento.gui.swing
+br.com.impacta.estacionamento.persistencia
+br.com.impacta.estacionamento.testes
+br.com.impacta.estacionamento.utilitario
